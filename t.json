@@ -1,0 +1,14 @@
+{
+               “name”               :    “PERSONAL TRAINER”,
+               “short_name”  :    “PERSONAL TRAINER”,
+                ”start_url”             :     “./t.html”,
+                “display”                :     “fullscreen”,
+                “background_color”   :   “#ffffff”,
+                “theme”                            :   “#ffffff”,
+                “icons”                              :    {
+                                                      [
+                                                        “src”:”t.png”,
+                                                         “type”:”image/png”,
+                                                          “sizes”:”192 x 192”
+                                                     ]   } 
+ } 
