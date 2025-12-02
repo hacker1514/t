@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta charset="utf-8">
+                <link rel=“manifest” href=“t.json”>
+                <title>💜 ℙ𝔼ℝ𝕊𝕆ℕ𝔸𝕃 💜 𝕋ℝ𝔸𝕀ℕ𝔼ℝ 💜</title>
+        </head>
+        <body style="background-color:#ffffff" onload="f()">
+                <center>
+                        <h1 style="color:#8f00ff">🚀 𝕎𝔼𝕃ℂ𝕆𝕄𝔼 𝔹𝔸ℂ𝕂 ℕ𝕀ℝ𝔸ℕ𝕁𝔸ℕ 𝕂𝕌𝕄𝔸ℝ ! 🚀</h1>
+                        <h1 style="color:#0000ff">⚔️ 𝕋ℍ𝕀𝕊 𝕀𝕊 𝕐𝕆𝕌ℝ 𝕂ℕ𝕀 ! ⚔️</h1>
+                </center>
+                <button style="color:#0000ff;border:4px solid lightblue;font-size:25px;" onclick="a()">𝔸𝔻𝔻 🌿</button>
+                <span style="color:white;">___</span>
+                <button style="color:#0000ff;border:4px solid lightblue;font-size:25px;" onclick="d()">𝔻𝔼𝕃𝔼𝕋𝔼 🌿</button>
+                <span style="color:white;">___</span>
+                <button style="color:#0000ff;border:4px solid lightblue;font-size:25px;" onclick="ne()">ℕ𝔼𝕎   🌿</button>
+                <h1 style="color:red;">ℝ𝔼ℙ𝕆ℝ𝕋𝕊 🕜</h1>
+                <center>
+                <div style="color:violet;" id="r" ></div>
+                </center>
+                <script>
+                        let p;
+                    window.addEventListener('beforeinstallprompt',e=>{
+                     e.preventDefault();
+                      p=e;
+                 }
+       );
+                        function install(){
+ if(p){
+ p.prompt();
+    }
+   }
+  if('serviceWorker' in navigator){        navigator.serviceWorker.register('python.js');
+}
+                        //upto
+                        function f(){
+                                let n=localStorage.getItem("t");
+                                let o='';
+                                if(n==null){
+                                        o="<h1> 👉 ℕ𝕆 ℝ𝔼ℙ𝕆ℝ𝕋𝕊 𝔽𝕆𝕌ℕ𝔻 ! 👈 </h1>";
+                                }else{
+                                        o="<table border='1' style='font-size:25px;border:4px solid lightblue'><tr style='color:maroon'><th>SI.NO</th><th>DATE</th><th>TIME</th><th>ACTIVITY</th></tr>";
+                                        for(let i=1;i<=n;i++){
+                                                let t=localStorage.getItem(i).split('|');
+                                                o=o+"<tr style='color:violet'><td>"+i+'</td><td>'+t[0]+'</td><td>'+t[1]+'</td><td>'+t[2]+'</td></tr>';
+                                        }
+                                        o=o+'</table>';
+                                }
+                                document.getElementById("r").innerHTML=o;
+                        }
+                        function ne(){
+                                localStorage.clear();
+                                f();
+                        }
+                        function a(){
+                                let i=prompt("🗼 𝔼ℕ𝕋𝔼ℝ 𝔸ℂ𝕋𝕀𝕍𝕀𝕋𝕐 🗼 \n");
+                                let d=new Date();
+                                let ds=d.toLocaleDateString();
+                                let dt=d.toLocaleTimeString();
+                                let n=localStorage.getItem('t');
+                                if(n==null){
+                                        n=0;
+                                }
+                                n=Number(n);
+                                i=ds+'|'+dt+'|'+i;
+                                localStorage.setItem(n+1,i);
+                                localStorage.setItem("t",n+1);
+                                f();
+                        }
+                        function d(){
+                                let p=prompt("✈️ 𝔼ℕ𝕋𝔼ℝ 𝕊𝔼ℝ𝕀𝔸𝕃 ℕ𝕌𝕄𝔹𝔼ℝ ✈️ ");
+                                let k=localStorage.key(p);
+                                if(k==null){
+                                        alert("✈️ ℕ𝕆 𝔸ℂ𝕋𝕀𝕍𝕀𝕋𝕐 𝔽𝕆𝕌ℕ𝔻 ! ✈️ ");
+                                }else{
+                                        let t=localStorage.getItem("t");
+                                        for(let i=k;i<t;i++){
+                                                localStorage.SetItem(i,localStorage.getItem(i+1));
+                                        }
+                                        localStorage.setItem("t",t-1);
+                                        f();
+                                }
+                        }
+                </script>
+        </body>
+</html>
