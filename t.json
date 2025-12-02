@@ -7,7 +7,7 @@
                 "theme"                            :   "#ffffff",
                 "icons"                              :    {
                                                       [
-                                                       "src":"t.png",
+                                                       "src":"sql.png",
                                                          "type":"image/png",
                                                           "sizes":"192 x 192"
                                                      ]   }
