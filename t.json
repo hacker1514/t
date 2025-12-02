@@ -1,14 +1,20 @@
 {
-               "name"               :    "PERSONAL TRAINER",
-               "short_name"  :    "PERSONAL TRAINER",
-                "start_url"             :     "./t.html”",
-               "display"                :     "fullscreen",
-                "background_color"   :   "#ffffff",
-                "theme"                            :   "#ffffff",
-                "icons"                              :    {
-                                                      [
-                                                       "src":"sql.png",
-                                                         "type":"image/png",
-                                                          "sizes":"192 x 192"
-                                                     ]   }
- }
+    "name": "PERSONAL TRAINER",
+    "short_name": "PERSONAL TRAINER",
+    "start_url": "./t.html",
+    "display": "fullscreen",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "icons": [
+        {
+            "src": "sql.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "sql.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}
