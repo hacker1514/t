@@ -7,7 +7,7 @@
                 "theme"                            :   "#ffffff",
                 "icons"                              :    {
                                                       [
-                                                       "src":"https://hacker1514.github.io/t/t.png",
+                                                       "src":"t.png",
                                                          "type":"image/png",
                                                           "sizes":"192 x 192"
                                                      ]   }
