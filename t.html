@@ -23,19 +23,20 @@
                 </center>
                 <script>
                         let p;
-                    window.addEventListener('beforeinstallprompt',e=>{
-                     e.preventDefault();
-                      p=e;
-                 }
-       );
-                        function install(){
- if(p){
- p.prompt();
-    }
-   }
-  if('serviceWorker' in navigator){        navigator.serviceWorker.register('t.js');
-}
-                        //upto
+        window.addEventListener("beforeinstallprompt", (e) => {
+            e.preventDefault();
+            p = e;
+        });
+        function install() {
+            music.play();
+            if (p) {
+                p.prompt();
+            }
+        }
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("t.js");
+        }
+
                         function f(){
                                 let n=localStorage.getItem("t");
                                 let o='';
