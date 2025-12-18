@@ -1,6 +1,6 @@
 {
-	"name":"𝙷𝚃𝙼𝙻 𝙴𝙳𝙸𝚃𝙾𝚁",
-	"short_name":"𝙷𝚃𝙼𝙻 𝙴𝙳𝙸𝚃𝙾𝚁",
+	"name":"HTML EDITOR",
+	"short_name":"HTML EDITOR",
 	"start_url":"./index.html",
 	"display":"fullscreen",
 	"background_color":"#1B263B",
@@ -10,11 +10,6 @@
 			"src":"logo.png",
 			"type":"image/png",
 			"sizes":"192x192"
-		},
-		{
-			"src":"logo.png",
-			"type":"image/png",
-			"sizes":"512x512"
 		}
 	]
 }
