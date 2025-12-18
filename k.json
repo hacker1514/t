@@ -1,0 +1,20 @@
+{
+	"name":"𝙷𝚃𝙼𝙻 𝙴𝙳𝙸𝚃𝙾𝚁",
+	"short_name":"𝙷𝚃𝙼𝙻 𝙴𝙳𝙸𝚃𝙾𝚁",
+	"start_url":"./index.html",
+	"display":"fullscreen",
+	"background_color":"#1B263B",
+	"theme_color":"#1B263B",
+	"icons":[
+		{
+			"src":"logo.png",
+			"type":"image/png",
+			"sizes":"192x192"
+		},
+		{
+			"src":"logo.png",
+			"type":"image/png",
+			"sizes":"512x512"
+		}
+	]
+}
